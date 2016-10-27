@@ -1,0 +1,26 @@
+﻿body { 
+    text-align:center;
+    background-color: lightgray;
+}
+
+div {
+    max-width: 230px;
+}
+
+input {
+    float:left;
+    margin: 1px;
+    width:45px;
+}
+
+textarea {
+    width: 206px;
+    height: 71px;
+}
+
+.botoes {
+    padding-left:20px;
+}
+.btn-success {
+    width:95px;
+}
