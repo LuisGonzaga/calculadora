@@ -4,6 +4,7 @@
     <title></title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <script src="Scripts/bootstrap.min.js"></script>
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
@@ -11,9 +12,12 @@
     <script src="Scripts/calculadora.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container sky">
         <div class="row">
             <br />
+            <p class="name">FCC Calculator<img class="logo" src="grey.jpg" /></p>
+        </div>
+        <div class="row">
             <div id='screen' class='text-right'>
                 <div id='active'>
                     <p id='answer'>0</p>
@@ -28,41 +32,43 @@
             <input type="button" value="C" class="btn btn-danger" onclick="clearAll();" />
             <input type="button" value="CE" class="btn btn-warning" onclick="clearScreen();" />
             <input type="button" value="⌫" class="btn btn-warning" onclick="backspace();" />
-            <input type="button" value="÷" class="btn btn-default"  onclick="operator('÷');"/>
+            <input type="button" value="÷" class="btn btn-default" onclick="operator('÷');" />
         </div>
         <div class="row botoes">
             <input type="button" value="7" class="btn btn-primary" onclick="newDigit(7);" />
             <input type="button" value="8" class="btn btn-primary" onclick="newDigit(8);" />
             <input type="button" value="9" class="btn btn-primary" onclick="newDigit(9);" />
-            <input type="button" value="x" class="btn btn-default"  onclick="operator('x');"/>
+            <input type="button" value="x" class="btn btn-default" onclick="operator('x');" />
         </div>
         <div class="row botoes">
             <input type="button" value="4" class="btn btn-primary" onclick="newDigit(4);" />
             <input type="button" value="5" class="btn btn-primary" onclick="newDigit(5);" />
             <input type="button" value="6" class="btn btn-primary" onclick="newDigit(6);" />
-            <input type="button" value="+" class="btn btn-default"  onclick="operator('+');"/>
+            <input type="button" value="+" class="btn btn-default" onclick="operator('+');" />
         </div>
         <div class="row botoes">
             <input type="button" value="1" class="btn btn-primary" onclick="newDigit(1);" />
             <input type="button" value="2" class="btn btn-primary" onclick="newDigit(2);" />
             <input type="button" value="3" class="btn btn-primary" onclick="newDigit(3);" />
-            <input type="button" value="-" class="btn btn-default" onclick="operator('-');"/>
+            <input type="button" value="-" class="btn btn-default" onclick="operator('-');" />
         </div>
         <div class="row botoes">
             <input type="button" value="0" class="btn btn-primary" onclick="newDigit(0);" />
             <input type="button" value="." class="btn btn-primary" onclick="newDot();" />
-            <input type="button" value="=" class="btn btn-success"  />
+            <input type="button" value="=" class="btn btn-success" onclick="total();" />
         </div>
-        <footer>
-            <br /><br />
-            <p>
-                By <u><a href="https://www.freecodecamp.com/luisgonzaga" target='_blank'>Luis Gonzaga</a></u> for
-                <a href="https://www.freecodecamp.com/" target='_blank'>
-                    <img src="http://i1264.photobucket.com/albums/jj491/wolf354/fcc.png" alt="freeCodeCamp" title="freeCodeCamp" />
-                </a>
-            </p>
-        </footer>
+        <br />
     </div>
+    <footer>
+        <br /><br />
+        <p>
+            By <u><a href="https://www.freecodecamp.com/luisgonzaga" target='_blank'>Luis Gonzaga</a></u> for
+            <a href="https://www.freecodecamp.com/" target='_blank'>
+                <img src="http://i1264.photobucket.com/albums/jj491/wolf354/fcc.png" alt="freeCodeCamp" title="freeCodeCamp" />
+            </a>
+        </p>
+    </footer>
+
 
 </body>
 </html>
