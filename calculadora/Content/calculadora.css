@@ -22,5 +22,29 @@ textarea {
     padding-left:20px;
 }
 .btn-success {
-    width:95px;
+    width:91px;
+}
+
+#active {
+  margin-right: 10px;
+  font-size: 32px;
+}
+
+#history {
+  position: relative;
+  height: 9px;
+  bottom: 11px;
+  margin-right: 14px;
+  color: #8b8b7b;
+  font-size: 10px;
+}
+
+#screen {
+  width: 206px;
+  height: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #808080;
+  border-radius: 6px;
+  background-color: #bef7f4;
 }
